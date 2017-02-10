@@ -1,0 +1,45 @@
+Release 10.1 ngdbuild K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise
+C:/Users/CST/luxuhui/sss/aaa/aaa.ise -intstyle ise -dd _ngo -nt timestamp -i -p
+xc3s200-ft256-4 top.ngc top.ngd
+
+Reading NGO file "C:/Users/CST/luxuhui/sss/aaa/top.ngc" ...
+Reading in constraint information from 'icf.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "switch[1]"  LOC="G12";>
+   [icf.ucf(46)]: This constraint cannot be distributed from the design objects
+   matching 'NET "switch[1]"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "switch[2]"  LOC="H14";>
+   [icf.ucf(47)]: This constraint cannot be distributed from the design objects
+   matching 'NET "switch[2]"' because those design objects do not contain or
+   drive any instances of the correct type.
+
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   2
+
+Total memory usage is 95624 kilobytes
+
+Writing NGD file "top.ngd" ...
+
+Writing NGDBUILD log file "top.bld"...

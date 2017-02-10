@@ -1,0 +1,330 @@
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+xst -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -ifn "C:/Users/CST/luxuhui/sss/aaa/top.xst" -ofn "C:/Users/CST/luxuhui/sss/aaa/top.syr"
+netgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim top.ngc top_synthesis.v
+ngdbuild -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf icf.ucf
+bitgen -ise "C:/Users/CST/luxuhui/sss/aaa/aaa.ise" -intstyle ise -f top.ut top.ncd

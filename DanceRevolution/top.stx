@@ -1,0 +1,35 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "aaa.v" in library work
+Module <top> compiled
+Module <pbdebounce> compiled
+Module <timer_1ms> compiled
+Module <display> compiled
+Module <display32bits> compiled
+Module <counter_sec> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> 
+
+Total memory usage is 157984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
